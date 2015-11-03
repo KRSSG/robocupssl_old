@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RbSimulatorClass</class>
+ <widget class="QMainWindow" name="RbSimulatorClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1255</width>
+    <height>643</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>RbSimulator</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QGraphicsView" name="graphicsView">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>981</width>
+        <height>591</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>1000</width>
+        <height>1000</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>2</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout"/>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1255</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSwitch">
+    <property name="title">
+     <string>Switch</string>
+    </property>
+    <addaction name="actionSwitch_to_Simulator"/>
+    <addaction name="actionSwitch_to_Monitor"/>
+   </widget>
+   <widget class="QMenu" name="menuBOT_Details">
+    <property name="title">
+     <string>BOT Details</string>
+    </property>
+    <addaction name="actionTeam_Yellow"/>
+    <addaction name="actionTeam_Blue"/>
+   </widget>
+   <widget class="QMenu" name="menuDocks">
+    <property name="title">
+     <string>Docks</string>
+    </property>
+    <addaction name="actionRandom_Motion"/>
+    <addaction name="actionDefaut_Values"/>
+   </widget>
+   <widget class="QMenu" name="menuLog">
+    <property name="title">
+     <string>Log</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>:/rbSimulator/D:/icons/PNG/player_time-256.png</normaloff>:/rbSimulator/D:/icons/PNG/player_time-256.png</iconset>
+    </property>
+    <addaction name="actionLog_Player"/>
+   </widget>
+   <addaction name="menuSwitch"/>
+   <addaction name="menuBOT_Details"/>
+   <addaction name="menuDocks"/>
+   <addaction name="menuLog"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QDockWidget" name="random_dock">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>250</width>
+     <height>38</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>524287</width>
+     <height>70</height>
+    </size>
+   </property>
+   <property name="features">
+    <set>QDockWidget::AllDockWidgetFeatures</set>
+   </property>
+   <property name="windowTitle">
+    <string>Random Motion Tester</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_3">
+    <widget class="QPushButton" name="startbtn">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Start</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="stopbtn">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>20</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Stop</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>161</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Random Motion:</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="defaultValues_dock">
+   <property name="windowTitle">
+    <string>Default Values</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_2">
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>231</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <property name="fieldGrowthPolicy">
+       <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>PORT</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="port_lab">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>ADDRESS</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="address_lab">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>INTERFACE</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLabel" name="interface_lab">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>BOTS PER SIDE</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLabel" name="nbots_lab">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>BOT RADIUS</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLabel" name="botrad_lab">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_10">
+        <property name="text">
+         <string>BALL RADIUS</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLabel" name="ballrad_lab">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Field Length</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>Goal Width</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="QLabel" name="label_11">
+        <property name="text">
+         <string>Goal Depth</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="0">
+       <widget class="QLabel" name="label_12">
+        <property name="text">
+         <string>Defense Radius</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="0">
+       <widget class="QLabel" name="label_13">
+        <property name="text">
+         <string>Defence Stretch</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QLabel" name="fLength_lab">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="QLabel" name="gWidth_lab">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QLabel" name="gDepth_lab">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="1">
+       <widget class="QLabel" name="defRadius_lab">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="1">
+       <widget class="QLabel" name="defStetch_lab">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_14">
+        <property name="text">
+         <string>Field Width</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QLabel" name="fWidth_lab">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="yellow_dock">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="windowTitle">
+    <string>Yellow Team</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_4">
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>0</y>
+       <width>204</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetMinimumSize</enum>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Bot ID</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label_15">
+        <property name="text">
+         <string>X Pos</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_16">
+        <property name="text">
+         <string>Y Pos</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLabel" name="label_17">
+        <property name="text">
+         <string>Orientation</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="blue_dock">
+   <property name="windowTitle">
+    <string>Blue Team</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_5">
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>1</y>
+       <width>221</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetMinimumSize</enum>
+      </property>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label_19">
+        <property name="text">
+         <string>X Pos</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_20">
+        <property name="text">
+         <string>Y Pos</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLabel" name="label_21">
+        <property name="text">
+         <string>Orientation</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_18">
+        <property name="text">
+         <string>Bot ID</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="logPlayer">
+   <property name="toolTip">
+    <string>This is for the random motion of the balls.</string>
+   </property>
+   <property name="windowTitle">
+    <string>Log Player</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_6">
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>231</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QCommandLinkButton" name="select_btn">
+        <property name="text">
+         <string>Select File</string>
+        </property>
+        <property name="icon">
+         <iconset resource="rbSimulator.qrc">
+          <normaloff>:/icons/icons/Movie.png</normaloff>:/icons/icons/Movie.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="fileName_text"/>
+      </item>
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <widget class="QWidget" name="tab">
+         <attribute name="title">
+          <string>Record Log</string>
+         </attribute>
+         <widget class="QCommandLinkButton" name="logRecord_lab">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>91</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Record</string>
+          </property>
+          <property name="icon">
+           <iconset resource="rbSimulator.qrc">
+            <normaloff>:/icons/icons/agt_Multimedia-256.png</normaloff>:/icons/icons/agt_Multimedia-256.png</iconset>
+          </property>
+         </widget>
+         <widget class="QCommandLinkButton" name="logRecordStop">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>10</y>
+            <width>91</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>STOP</string>
+          </property>
+          <property name="icon">
+           <iconset resource="rbSimulator.qrc">
+            <normaloff>:/icons/icons/stop-256.png</normaloff>:/icons/icons/stop-256.png</iconset>
+          </property>
+         </widget>
+         <widget class="QCommandLinkButton" name="logRecordClean_btn">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>50</y>
+            <width>181</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Clean Log File</string>
+          </property>
+          <property name="icon">
+           <iconset resource="rbSimulator.qrc">
+            <normaloff>:/icons/icons/Tag_remove.png</normaloff>:/icons/icons/Tag_remove.png</iconset>
+          </property>
+         </widget>
+         <widget class="QLabel" name="statusLbl">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>90</y>
+            <width>171</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="title">
+          <string>Play Log</string>
+         </attribute>
+         <widget class="QCommandLinkButton" name="logPlay_lab">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>101</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Play</string>
+          </property>
+          <property name="icon">
+           <iconset resource="rbSimulator.qrc">
+            <normaloff>:/icons/icons/player_play-256.png</normaloff>:/icons/icons/player_play-256.png</iconset>
+          </property>
+         </widget>
+         <widget class="QCommandLinkButton" name="logPauseBtn">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>0</y>
+            <width>111</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Pause</string>
+          </property>
+          <property name="icon">
+           <iconset resource="rbSimulator.qrc">
+            <normaloff>:/icons/icons/player_pause-256.png</normaloff>:/icons/icons/player_pause-256.png</iconset>
+          </property>
+         </widget>
+         <widget class="QSlider" name="fpsSlider">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>80</y>
+            <width>111</width>
+            <height>19</height>
+           </rect>
+          </property>
+          <property name="minimum">
+           <number>10</number>
+          </property>
+          <property name="maximum">
+           <number>500</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QLabel" name="fpsLbl">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>80</y>
+            <width>61</width>
+            <height>10</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="showLogCheck">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>100</y>
+            <width>161</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Show Log Output</string>
+          </property>
+         </widget>
+         <widget class="QCommandLinkButton" name="logResumeBtn">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>40</y>
+            <width>101</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Resume</string>
+          </property>
+          <property name="icon">
+           <iconset resource="rbSimulator.qrc">
+            <normaloff>:/icons/icons/player-end-256.png</normaloff>:/icons/icons/player-end-256.png</iconset>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <action name="actionSwitch_to_Simulator">
+   <property name="icon">
+    <iconset resource="rbSimulator.qrc">
+     <normaloff>:/icons/icons/network-256.png</normaloff>:/icons/icons/network-256.png</iconset>
+   </property>
+   <property name="text">
+    <string>Switch to Simulator</string>
+   </property>
+  </action>
+  <action name="actionSwitch_to_Monitor">
+   <property name="icon">
+    <iconset resource="rbSimulator.qrc">
+     <normaloff>:/icons/icons/Users_Group.png</normaloff>:/icons/icons/Users_Group.png</iconset>
+   </property>
+   <property name="text">
+    <string>Switch to Monitor</string>
+   </property>
+  </action>
+  <action name="actionTeam_Yellow">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Team Yellow</string>
+   </property>
+  </action>
+  <action name="actionTeam_Blue">
+   <property name="text">
+    <string>Team Blue</string>
+   </property>
+  </action>
+  <action name="actionRandom_Motion">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/rbSimulator/D:/icons/PNG/agt_update-product-256.png</normaloff>:/rbSimulator/D:/icons/PNG/agt_update-product-256.png</iconset>
+   </property>
+   <property name="text">
+    <string>Random Motion</string>
+   </property>
+  </action>
+  <action name="actionDefaut_Values">
+   <property name="text">
+    <string>Defaut Values</string>
+   </property>
+  </action>
+  <action name="actionLog_Player">
+   <property name="icon">
+    <iconset resource="rbSimulator.qrc">
+     <normaloff>:/icons/icons/Video.png</normaloff>:/icons/icons/Video.png</iconset>
+   </property>
+   <property name="text">
+    <string>Log Player</string>
+   </property>
+  </action>
+  <action name="actionStartRec">
+   <property name="text">
+    <string>Start Recording</string>
+   </property>
+  </action>
+  <action name="actionEnd_Recording">
+   <property name="text">
+    <string>End Recording</string>
+   </property>
+  </action>
+  <action name="actionPause_Recording">
+   <property name="text">
+    <string>Pause Recording</string>
+   </property>
+  </action>
+  <action name="actionSet_Output_File">
+   <property name="text">
+    <string>Set Output File</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="rbSimulator.qrc"/>
+ </resources>
+ <connections/>
+</ui>

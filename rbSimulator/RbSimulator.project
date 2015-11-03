@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Project Name="RbSimulator">
+  <Description/>
+  <VirtualDirectory Name="src"/>
+  <Dependencies/>
+  <Settings Type="Executable">
+    <GlobalSettings>
+      <Compiler Options="" C_Options="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="Debug" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g -Wall" C_Options="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" UseDifferentPCHFlags="no" PCHFlags="">
+        <IncludePath Value=".\"/>
+        <IncludePath Value="..\common\include"/>
+        <IncludePath Value=".\GeneratedFiles"/>
+        <IncludePath Value="&quot;$(QTDIR)\include&quot;"/>
+        <IncludePath Value="&quot;.\GeneratedFiles\$(ConfigurationName)&quot;"/>
+        <IncludePath Value="&quot;$(QTDIR)\include\qtmain&quot;"/>
+        <IncludePath Value="&quot;$(QTDIR)\include\QtCore&quot;"/>
+        <IncludePath Value="&quot;$(QTDIR)\include\QtGui&quot;"/>
+        <IncludePath Value="&quot;$(QTDIR)\include\QtOpenGL&quot;"/>
+        <IncludePath Value="..\common\GBP\proto\cpp"/>
+        <IncludePath Value="..\common\GBP\include"/>
+        <IncludePath Value="..\common\GBP\util"/>
+        <IncludePath Value="..\common\GBP\net"/>
+        <Preprocessor Value="WIN32"/>
+        <Preprocessor Value="QT_LARGEFILE_SUPPORT"/>
+        <Preprocessor Value="QT_CORE_LIB"/>
+        <Preprocessor Value="QT_GUI_LIB"/>
+        <Preprocessor Value="QT_OPENGL_LIB"/>
+        <Preprocessor Value="QT_DLL"/>
+        <Preprocessor Value="_CRT_SECURE_NO_WARNINGS"/>
+      </Compiler>
+      <Linker Options="-O0" Required="yes">
+        <LibraryPath Value="..\common\GBP\lib\$(ConfigurationName)"/>
+        <LibraryPath Value="&quot;$(QTDIR)\lib&quot;"/>
+        <LibraryPath Value=".\Box2D\$(ConfigurationName)"/>
+        <Library Value="qtmaind.lib"/>
+        <Library Value="QtCored4.lib"/>
+        <Library Value="QtGuid4.lib"/>
+        <Library Value="QtOpenGLd4.lib"/>
+        <Library Value="libprotobuf.lib"/>
+        <Library Value="libprotobuf-lite.lib"/>
+        <Library Value="libprotoc.lib"/>
+        <Library Value="gdi32.lib"/>
+        <Library Value="user32.lib"/>
+        <Library Value="ws2_32.lib"/>
+        <Library Value="Box2D.lib"/>
+      </Linker>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(OutDir)\$(ProjectName)" IntermediateDirectory="$(ConfigurationName)" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="./Debug" PauseExecWhenProcTerminates="yes"/>
+      <Environment EnvVarSetName="&lt;Use Workspace Settings&gt;" DbgSetName="&lt;Use Global Settings&gt;">
+        <![CDATA[
+      
+      ]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName/>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g -Wall" C_Options="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" UseDifferentPCHFlags="no" PCHFlags="">
+        <IncludePath Value=".\"/>
+        <IncludePath Value="..\common\include"/>
+        <IncludePath Value=".\GeneratedFiles"/>
+        <IncludePath Value="&quot;$(QTDIR)\include&quot;"/>
+        <IncludePath Value="&quot;.\GeneratedFiles\$(ConfigurationName)&quot;"/>
+        <IncludePath Value="&quot;$(QTDIR)\include\qtmain&quot;"/>
+        <IncludePath Value="&quot;$(QTDIR)\include\QtCore&quot;"/>
+        <IncludePath Value="&quot;$(QTDIR)\include\QtGui&quot;"/>
+        <IncludePath Value="&quot;$(QTDIR)\include\QtOpenGL&quot;"/>
+        <IncludePath Value="..\common\GBP\proto\cpp"/>
+        <IncludePath Value="..\common\GBP\include"/>
+        <IncludePath Value="..\common\GBP\util"/>
+        <IncludePath Value="..\common\GBP\net"/>
+        <Preprocessor Value="WIN32"/>
+        <Preprocessor Value="QT_LARGEFILE_SUPPORT"/>
+        <Preprocessor Value="QT_NO_DEBUG"/>
+        <Preprocessor Value="NDEBUG"/>
+        <Preprocessor Value="QT_CORE_LIB"/>
+        <Preprocessor Value="QT_GUI_LIB"/>
+        <Preprocessor Value="QT_OPENGL_LIB"/>
+        <Preprocessor Value="QT_DLL"/>
+        <Preprocessor Value="_CRT_SECURE_NO_WARNINGS"/>
+      </Compiler>
+      <Linker Options="-O0" Required="yes">
+        <LibraryPath Value="..\common\GBP\lib\$(ConfigurationName)"/>
+        <LibraryPath Value="&quot;$(QTDIR)\lib&quot;"/>
+        <LibraryPath Value=".\Box2D\$(ConfigurationName)"/>
+        <Library Value="qtmaind.lib"/>
+        <Library Value="QtCored4.lib"/>
+        <Library Value="QtGuid4.lib"/>
+        <Library Value="QtOpenGLd4.lib"/>
+        <Library Value="libprotobuf.lib"/>
+        <Library Value="libprotobuf-lite.lib"/>
+        <Library Value="libprotoc.lib"/>
+        <Library Value="gdi32.lib"/>
+        <Library Value="user32.lib"/>
+        <Library Value="ws2_32.lib"/>
+        <Library Value="Box2D.lib"/>
+      </Linker>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(OutDir)\$(ProjectName)" IntermediateDirectory="$(ConfigurationName)" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="./Debug" PauseExecWhenProcTerminates="yes"/>
+      <Environment EnvVarSetName="&lt;Use Workspace Settings&gt;" DbgSetName="&lt;Use Global Settings&gt;">
+        <![CDATA[
+      
+      ]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName/>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+  </Settings>
+  <VirtualDirectory Name="Simulator">
+    <File Name="graphicsItems.cpp"/>
+    <File Name="graphicsItems.h"/>
+    <File Name="LogPlayer.cpp"/>
+    <File Name="LogPlayer.h"/>
+    <File Name="RbCentral.cpp"/>
+    <File Name="RbCentral.h"/>
+    <File Name="RbSimulator.cpp"/>
+    <File Name="RbSimulator.h"/>
+    <File Name="Server.cpp"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="PhysxEngine">
+    <File Name="EntityInfo.cpp"/>
+    <File Name="EntityInfo.h"/>
+    <File Name="PhysxEngineMain.cpp"/>
+    <File Name="PhysxEngineMain.h"/>
+    <File Name="World.cpp"/>
+    <File Name="World.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="Form Files">
+    <File Name="graphicsItems.ui"/>
+    <File Name="RbSimulator.ui"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="GeneratedFiles">
+    <File Name="GeneratedFiles/ui_graphicsItems.h"/>
+    <File Name="GeneratedFiles/ui_RbSimulator.h"/>
+    <VirtualDirectory Name="Debug">
+      <File Name="GeneratedFiles/Debug/moc_RbSimulator.cpp"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="Release">
+      <File Name="GeneratedFiles/Release/moc_RbSimulator.cpp"/>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <VirtualDirectory Name="Source">
+    <File Name="../common/src/Logger.cpp"/>
+    <File Name="main.cpp"/>
+    <File Name="../common/src/Semaphore.cpp"/>
+    <File Name="../common/src/SharedMemory.cpp"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="Header">
+    <File Name="../common/include/comdef.h"/>
+    <File Name="config.h"/>
+    <File Name="../common/include/geometry-inl.h"/>
+    <File Name="../common/include/Logger.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="GBP">
+    <VirtualDirectory Name="proto">
+      <VirtualDirectory Name="cpp">
+        <File Name="../common/GBP/proto/cpp/messages_robocup_ssl_detection.pb.cc"/>
+        <File Name="../common/GBP/proto/cpp/messages_robocup_ssl_detection.pb.h"/>
+        <File Name="../common/GBP/proto/cpp/messages_robocup_ssl_geometry.pb.cc"/>
+        <File Name="../common/GBP/proto/cpp/messages_robocup_ssl_geometry.pb.h"/>
+        <File Name="../common/GBP/proto/cpp/messages_robocup_ssl_refbox_log.pb.cc"/>
+        <File Name="../common/GBP/proto/cpp/messages_robocup_ssl_refbox_log.pb.h"/>
+        <File Name="../common/GBP/proto/cpp/messages_robocup_ssl_wrapper.pb.cc"/>
+        <File Name="../common/GBP/proto/cpp/messages_robocup_ssl_wrapper.pb.h"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="net">
+      <File Name="../common/GBP/net/netraw.cpp"/>
+      <File Name="../common/GBP/net/netraw.h"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="util">
+      <File Name="../common/GBP/util/util.h"/>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <Dependencies Name="Debug"/>
+  <Dependencies Name="Release"/>
+</CodeLite_Project>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Project Name="Strategy">
+  <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00080001N0005Debug0000000000000001N0011Debug Linux0000000000000001N0010DebugLinux0000000000000001N0012DebugWindows0000000000000001N0007Release0000000000000001N0013Release Linux0000000000000001N0012ReleaseLinux0000000000000001N0014ReleaseWindows000000000000]]>
+    </Plugin>
+  </Plugins>
+  <Description/>
+  <VirtualDirectory Name="Source">
+    <File Name="main.cpp"/>
+    <File Name="mainheaders.hpp"/>
+    <File Name="testcode.hpp"/>
+    <File Name="worker.hpp"/>
+  </VirtualDirectory>
+  <Dependencies/>
+  <VirtualDirectory Name="Skill Layer">
+    <VirtualDirectory Name="PathPlanners">
+      <File Name="errt.cpp"/>
+      <File Name="kdTree.hpp"/>
+      <File Name="mergeSCurve.cpp"/>
+      <File Name="naivePathPlanner.cpp"/>
+      <File Name="pathPlanners.h"/>
+      <File Name="sCurve.cpp"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="SkillList">
+      <File Name="sDribble.cpp"/>
+      <File Name="sDribbleToPoint.cpp"/>
+      <File Name="sGoalKeeping.cpp"/>
+      <File Name="sGoToBall.cpp"/>
+      <File Name="sGoToPoint.cpp"/>
+      <File Name="sKick.cpp"/>
+      <File Name="sReceiveBall.cpp"/>
+      <File Name="sSpin.cpp"/>
+      <File Name="sStop.cpp"/>
+      <File Name="sTurnToAngle.cpp"/>
+      <File Name="sTurnToPoint.cpp"/>
+      <File Name="sVelocity.cpp"/>
+      <File Name="sDefendPoint.cpp"/>
+      <File Name="sKickToPoint.cpp"/>
+    </VirtualDirectory>
+    <File Name="skillSet.cpp"/>
+    <File Name="skillSet.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="Tactic Layer">
+    <File Name="robot.cpp"/>
+    <File Name="robot.h"/>
+    <File Name="tactic.h"/>
+    <File Name="tStop.hpp"/>
+    <File Name="tAttack.hpp"/>
+    <File Name="tBlock.hpp"/>
+    <File Name="tCharge.hpp"/>
+    <File Name="tDefend.hpp"/>
+    <File Name="tDefendLine.hpp"/>
+    <File Name="tDefendPoint.hpp"/>
+    <File Name="tDragToGoal.hpp"/>
+    <File Name="tGoalKeepingOppSide.hpp"/>
+    <File Name="tGoalKeepingOurSide.hpp"/>
+    <File Name="tMarkBot.hpp"/>
+    <File Name="tPosition.hpp"/>
+    <File Name="tPositionForPenalty.hpp"/>
+    <File Name="tPositionForStart.hpp"/>
+    <File Name="tShoot.hpp"/>
+    <File Name="tSteal.hpp"/>
+    <File Name="tVelocity.hpp"/>
+    <File Name="tKickToGoal.hpp"/>
+    <File Name="tPass.hpp"/>
+    <File Name="tReceiveBall.hpp"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="BeliefState">
+    <File Name="beliefState.cpp"/>
+    <File Name="beliefState.h"/>
+    <File Name="kalman.cpp"/>
+    <File Name="kalman.h"/>
+    <File Name="refBoxThread.cpp"/>
+    <File Name="refBoxThread.h"/>
+    <File Name="visionThread.cpp"/>
+    <File Name="visionThread.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="Play Layer">
+    <VirtualDirectory Name="PlayBook">
+      <File Name="playBook.cpp"/>
+      <File Name="playBook.h"/>
+      <File Name="pNone.hpp"/>
+      <File Name="pTestPlay.hpp"/>
+      <File Name="pOffenceSetPos1.hpp"/>
+      <File Name="pOffensePlay.hpp"/>
+      <File Name="pOppGoalKick.hpp"/>
+      <File Name="pOurGoalKick.hpp"/>
+      <File Name="pPositionOppStrike.hpp"/>
+      <File Name="pPositionOurStrike.hpp"/>
+      <File Name="pSetPosition.hpp"/>
+      <File Name="pTieBreakerOppPenalty.hpp"/>
+      <File Name="pTieBreakerOurPenalty.hpp"/>
+      <File Name="pDefenceSetPos1.hpp"/>
+      <File Name="pDefensiveGoToGoal.hpp"/>
+      <File Name="pDefensiveSteal.hpp"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="PlaySelector">
+      <File Name="expPS.cpp"/>
+      <File Name="expPS.h"/>
+      <File Name="naivePS.h"/>
+      <File Name="ps.cpp"/>
+      <File Name="ps.h"/>
+      <File Name="naivePS.cpp"/>
+      <File Name="pExec.h"/>
+    </VirtualDirectory>
+    <File Name="pExec.cpp"/>
+    <File Name="play.hpp"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="HAL">
+    <File Name="comm.cpp"/>
+    <File Name="comm.h"/>
+    <File Name="grSimComm.cpp"/>
+    <File Name="grSimComm.h"/>
+    <File Name="../common/src/serial.cpp"/>
+    <File Name="../common/include/serial.h"/>
+    <File Name="simComm.cpp"/>
+    <File Name="simComm.h"/>
+    <File Name="sslComm.cpp"/>
+    <File Name="sslComm.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="Google Protocol Buffer">
+    <File Name="../common/gpb/proto/cpp/grSim_Commands.pb.cc"/>
+    <File Name="../common/gpb/proto/cpp/grSim_Commands.pb.h"/>
+    <File Name="../common/gpb/proto/cpp/grSim_Packet.pb.cc"/>
+    <File Name="../common/gpb/proto/cpp/grSim_Packet.pb.h"/>
+    <File Name="../common/gpb/proto/cpp/grSim_Replacement.pb.cc"/>
+    <File Name="../common/gpb/proto/cpp/grSim_Replacement.pb.h"/>
+    <File Name="../common/gpb/proto/cpp/messages_robocup_ssl_detection.pb.cc"/>
+    <File Name="../common/gpb/proto/cpp/messages_robocup_ssl_detection.pb.h"/>
+    <File Name="../common/gpb/proto/cpp/messages_robocup_ssl_geometry.pb.cc"/>
+    <File Name="../common/gpb/proto/cpp/messages_robocup_ssl_geometry.pb.h"/>
+    <File Name="../common/gpb/proto/cpp/messages_robocup_ssl_refbox_log.pb.cc"/>
+    <File Name="../common/gpb/proto/cpp/messages_robocup_ssl_refbox_log.pb.h"/>
+    <File Name="../common/gpb/proto/cpp/messages_robocup_ssl_wrapper.pb.cc"/>
+    <File Name="../common/gpb/proto/cpp/messages_robocup_ssl_wrapper.pb.h"/>
+    <File Name="../common/gpb/proto/cpp/sslDebug_Data.pb.cc"/>
+    <File Name="../common/gpb/proto/cpp/sslDebug_Data.pb.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="SSLVisionClient">
+    <File Name="client.cpp"/>
+    <File Name="client.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="Util">
+    <File Name="../common/include/cs.hpp"/>
+    <File Name="../common/src/logger.cpp"/>
+    <File Name="../common/include/logger.h"/>
+    <File Name="../common/src/socket.cpp"/>
+    <File Name="../common/src/thread.cpp"/>
+    <File Name="../common/include/thread.h"/>
+    <File Name="../common/include/timer.h"/>
+    <File Name="../common/include/sem.h"/>
+    <File Name="../common/src/sem.cpp"/>
+    <File Name="../common/src/shmem.cpp"/>
+    <File Name="../common/include/shmem.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="Common">
+    <File Name="../common/include/comdef.h"/>
+    <File Name="../common/include/geometry.hpp"/>
+    <File Name="../common/include/util.h"/>
+    <File Name="../common/include/netraw.h"/>
+    <File Name="../common/src/netraw.cpp"/>
+    <File Name="fieldConfig.h"/>
+    <File Name="../common/include/rbCommDef.h"/>
+    <File Name="../common/include/comdef.cpp"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="Learning">
+    <File Name="RL.cpp"/>
+    <File Name="RL.h"/>
+    <File Name="MLP.cpp"/>
+    <File Name="MLP.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="QtDebugger">
+    <File Name="qtDebugger/qtDebuggerMain.cpp"/>
+    <File Name="qtDebugger/qtDebuggerMain.h"/>
+    <File Name="qtDebugger/main_widget.h"/>
+    <File Name="qtDebugger/main_widget.cpp"/>
+    <File Name="qtDebugger/main_widget.moc.cpp"/>
+    <File Name="qtdebugger_mocgen.sh"/>
+    <File Name="qtDebugger/render_area.h"/>
+    <File Name="qtDebugger/render_area.cpp"/>
+    <File Name="qtDebugger/render_area.moc.cpp"/>
+  </VirtualDirectory>
+  <Settings Type="Executable">
+    <GlobalSettings>
+      <Compiler Options="" C_Options="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="Debug" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="overwrite" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g;-Wall;-O0;-UWIN32;-USSL_COMM;-DGR_SIM_COMM;-DPS_CLASS=NaivePS;-URUN_REFBOX;-USHOW_REFBOX_LOG;-DSHOW_SSLVISION_LOG;-UMIN;-UMAX" C_Options="-g;-Wall;-O0;-UWIN32;-USSL_COMM;-DGR_SIM_COMM;-DPS_CLASS=NaivePS;-URUN_REFBOX;-USHOW_REFBOX_LOG;-DSHOW_SSLVISION_LOG;-UMIN;-UMAX" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" UseDifferentPCHFlags="no" PCHFlags="">
+        <IncludePath Value="../common/include"/>
+        <IncludePath Value="../common/gpb/proto/cpp"/>
+        <IncludePath Value="/usr/include/qt4"/>
+        <Preprocessor Value="_DEBUG"/>
+      </Compiler>
+      <Linker Options="-pthread;-lm" Required="yes">
+        <LibraryPath Value="/usr/lib/qt4"/>
+        <Library Value="libprotobuf.a"/>
+        <Library Value="libprotobuf-lite.a"/>
+        <Library Value="libprotoc.a"/>
+        <Library Value="libQtCore.so"/>
+        <Library Value="libQtGui.so"/>
+        <Library Value="libQtOpenGL.so"/>
+      </Linker>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/$(ProjectName)" IntermediateDirectory="./Debug" Command="./$(ProjectName)" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild>
+        <Command Enabled="yes">./qtdebugger_mocgen.sh</Command>
+      </PreBuild>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName/>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="overwrite" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-Wall;-O3;-UWIN32;-DGR_SIM_COMM;-DPS_CLASS=NaivePS;-URUN_REFBOX;-DSHOW_REFBOX_LOG;-DSHOW_SSLVISION_LOG;-UMIN;-UMAX" C_Options="-Wall;-O3;-UWIN32;-DGR_SIM_COMM;-DPS_CLASS=NaivePS;-URUN_REFBOX;-DSHOW_REFBOX_LOG;-DSHOW_SSLVISION_LOG;-UMIN;-UMAX" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" UseDifferentPCHFlags="no" PCHFlags="">
+        <IncludePath Value="../common/include"/>
+        <IncludePath Value="../common/gpb/proto/cpp"/>
+        <Preprocessor Value="NDEBUG"/>
+      </Compiler>
+      <Linker Options="-s;-pthread;-lm" Required="yes">
+        <Library Value="libprotobuf.a"/>
+        <Library Value="libprotobuf-lite.a"/>
+        <Library Value="libprotoc.a"/>
+      </Linker>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/$(ProjectName)" IntermediateDirectory="./Release" Command="./$(ProjectName)" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      ]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild>
+        <Command Enabled="yes">flex --outfile=playLexer.c playLexer.l</Command>
+        <Command Enabled="yes">bison --output=playParser.c -d playParser.y</Command>
+      </PreBuild>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName/>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+  </Settings>
+</CodeLite_Project>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Workspace Name="RobocupSSL" Database="./RobocupSSL.tags">
+  <Project Name="RbSimulator" Path="rbSimulator/RbSimulator.project" Active="No"/>
+  <Project Name="KGPVisionGUI" Path="KGPVisionGUI/KGPVisionGUI.project" Active="No"/>
+  <Project Name="PlayEditor" Path="PlayEditor/PlayEditor.project"/>
+  <Environment>
+    <![CDATA[
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  ]]>
+  </Environment>
+  <Project Name="Strategy" Path="Strategy/Strategy.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Project Name="Strategy" ConfigName="Debug"/>
+      <Project Name="RbSimulator" ConfigName="Debug"/>
+      <Project Name="PlayEditor" ConfigName="Debug"/>
+      <Project Name="KGPVisionGUI" ConfigName="Debug"/>
+      <Project Name="Strategy" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="no">
+      <Project Name="Strategy" ConfigName="Release"/>
+      <Project Name="RbSimulator" ConfigName="Release"/>
+      <Project Name="PlayEditor" ConfigName="Release"/>
+      <Project Name="KGPVisionGUI" ConfigName="Release"/>
+      <Project Name="Strategy" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

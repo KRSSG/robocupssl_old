@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Project Name="PlayEditor">
+  <Description/>
+  <VirtualDirectory Name="src"/>
+  <VirtualDirectory Name="include"/>
+  <Dependencies/>
+  <Settings Type="Executable">
+    <GlobalSettings>
+      <Compiler Options="" C_Options="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="Debug" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g -Wall" C_Options="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" UseDifferentPCHFlags="no" PCHFlags="">
+        <IncludePath Value="&quot;$(QTDIR)\include\QtCore&quot;"/>
+        <IncludePath Value="&quot;$(QTDIR)\include\QtGui&quot;"/>
+        <IncludePath Value="&quot;$(QTDIR)\include&quot;"/>
+        <IncludePath Value="&quot;$(QTDIR)\include\ActiveQt&quot;"/>
+        <IncludePath Value="&quot;debug&quot;"/>
+        <IncludePath Value="&quot;.&quot;"/>
+        <IncludePath Value="c:\Qt\4.7.2\mkspecs\default"/>
+        <Preprocessor Value="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_DLL,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT"/>
+      </Compiler>
+      <Linker Options="-O0" Required="yes">
+        <LibraryPath Value="$(QTDIR)\lib"/>
+        <Library Value="qtmaind.lib"/>
+        <Library Value="QtGuid4.lib"/>
+        <Library Value="QtCored4.lib"/>
+      </Linker>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="debug\PlayEditor" IntermediateDirectory="debug\" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="./Debug" PauseExecWhenProcTerminates="no"/>
+      <Environment EnvVarSetName="&lt;Use Workspace Settings&gt;" DbgSetName="&lt;Use Global Settings&gt;">
+        <![CDATA[
+      ]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName/>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g -Wall" C_Options="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" UseDifferentPCHFlags="no" PCHFlags="">
+        <IncludePath Value="&quot;$(QTDIR)\include\QtCore&quot;"/>
+        <IncludePath Value="&quot;$(QTDIR)\include\QtGui&quot;"/>
+        <IncludePath Value="&quot;$(QTDIR)\include&quot;"/>
+        <IncludePath Value="&quot;$(QTDIR)\include\ActiveQt&quot;"/>
+        <IncludePath Value="&quot;release&quot;"/>
+        <IncludePath Value="&quot;.&quot;"/>
+        <IncludePath Value="c:\Qt\4.7.2\mkspecs\default"/>
+        <Preprocessor Value="QT_NO_DEBUG,NDEBUG,_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_DLL,QT_NO_DEBUG,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT,NDEBUG"/>
+      </Compiler>
+      <Linker Options="-O0" Required="yes">
+        <LibraryPath Value="$(QTDIR)\lib"/>
+        <Library Value="qtmain.lib"/>
+        <Library Value="QtGui4.lib"/>
+        <Library Value="QtCore4.lib"/>
+      </Linker>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="release\PlayEditor" IntermediateDirectory="release\" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="./Debug" PauseExecWhenProcTerminates="yes"/>
+      <Environment EnvVarSetName="&lt;Use Workspace Settings&gt;" DbgSetName="&lt;Use Global Settings&gt;">
+        <![CDATA[
+      ]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName/>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+  </Settings>
+  <VirtualDirectory Name="Source Files">
+    <File Name="highlighter.cpp"/>
+    <File Name="main.cpp"/>
+    <File Name="mainwindow.cpp"/>
+    <File Name="textedit.cpp"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="Header Files">
+    <File Name="highlighter.h"/>
+    <File Name="mainwindow.h"/>
+    <File Name="textedit.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="Generated Files">
+    <File Name="GeneratedFiles/qrc_playeditor.cpp"/>
+    <VirtualDirectory Name="Debug">
+      <File Name="Debug/moc_highlighter.cpp"/>
+      <File Name="Debug/moc_mainwindow.cpp"/>
+      <File Name="Debug/moc_textedit.cpp"/>
+    </VirtualDirectory>
+    <VirtualDirectory Name="Release">
+      <File Name="Release/moc_highlighter.cpp"/>
+      <File Name="Release/moc_mainwindow.cpp"/>
+      <File Name="Release/moc_textedit.cpp"/>
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <VirtualDirectory Name="Form Files"/>
+  <VirtualDirectory Name="Resource Files">
+    <File Name="playeditor.qrc"/>
+    <File Name="wordlist.txt"/>
+  </VirtualDirectory>
+  <Dependencies Name="Debug"/>
+  <Dependencies Name="Release"/>
+</CodeLite_Project>
